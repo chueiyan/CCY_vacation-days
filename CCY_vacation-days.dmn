@@ -31,7 +31,11 @@
           <text>Years of Service</text>
         </inputExpression>
       </input>
-      <output id="_ACB8FFFD-56D9-4AC3-B44A-14B6C39342D1" name="Output-1" />
+      <output id="_ACB8FFFD-56D9-4AC3-B44A-14B6C39342D1" name="Output-1">
+        <defaultOutputEntry id="_1371D8FE-9A00-4C95-8810-0C30E541B8EE">
+          <text>0</text>
+        </defaultOutputEntry>
+      </output>
       <annotation name="Annotations" />
       <rule id="_2A4C7739-4BEA-44A8-B120-58F01FC9935A">
         <inputEntry id="_8155B8F5-5EF0-455E-9907-FB7F323160F4">
@@ -71,6 +75,52 @@
     <informationRequirement id="_02B5161E-6A0D-4D9A-9B6E-72F7A87EA42A">
       <requiredInput href="#_38690C59-0B9F-4FBF-957C-7EB0B55EF30E" />
     </informationRequirement>
+    <decisionTable id="_F616C2EC-EC74-4B09-8757-4AD4FF9FF44F" typeRef="number" hitPolicy="COLLECT" label="Extra days case-2" aggregation="MAX">
+      <input id="_A1A53A58-1938-49F1-A255-38DF4E15F585">
+        <inputExpression id="_6DCEF938-2AAD-43CF-92F8-9B24C59A04F7" typeRef="number">
+          <text>Age</text>
+        </inputExpression>
+      </input>
+      <input id="_024E0DAC-814E-4211-A07B-06B38977E62B">
+        <inputExpression id="_F5D4BE17-F17F-43C8-84B0-7731555DE501" typeRef="number">
+          <text>Years of Service</text>
+        </inputExpression>
+      </input>
+      <output id="_F41722F5-747C-4883-ACA0-577AE978DABB" name="Output-1">
+        <defaultOutputEntry id="_F45E181C-3319-4044-86CA-262DD50B9546">
+          <text>0</text>
+        </defaultOutputEntry>
+      </output>
+      <annotation name="Annotations" />
+      <rule id="_0E114362-5839-425D-BBC8-B9F98625B1AD">
+        <inputEntry id="_E0BC9413-7E6D-4A58-8EE3-90E2EA4D9AFE">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="_6A8D1490-A51A-496C-ABFF-FB1B20C1EB90">
+          <text>&gt;=30</text>
+        </inputEntry>
+        <outputEntry id="_4EA1B98A-9FE9-44C8-B450-B175261A99AF">
+          <text>4</text>
+        </outputEntry>
+        <annotationEntry>
+          <text>// Your annotations here</text>
+        </annotationEntry>
+      </rule>
+      <rule id="_A6058608-FD94-48A9-B583-0481729F98EB">
+        <inputEntry id="_CDD435D6-CCC3-4339-9BAA-9EF8216AAD1D">
+          <text>&gt;=60</text>
+        </inputEntry>
+        <inputEntry id="_DB4F89B8-CB55-49C9-85DF-873EAD49DE83">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="_DDA5C948-AE03-4312-8540-95BF25F6E411">
+          <text>3</text>
+        </outputEntry>
+        <annotationEntry>
+          <text></text>
+        </annotationEntry>
+      </rule>
+    </decisionTable>
   </decision>
   <decision name="Extra days case-3" id="_E9FDBBB9-EC98-4F6A-8FA0-8569CE95449A">
     <variable name="Extra days case-3" id="_9A156373-E619-42F3-9D4E-6FA809D24509" typeRef="number" />
@@ -89,6 +139,13 @@
             <kie:width>190</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D10588F4-563E-4775-82A0-7589155061FE">
+            <kie:width>60</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>240</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F616C2EC-EC74-4B09-8757-4AD4FF9FF44F">
             <kie:width>60</kie:width>
             <kie:width>118</kie:width>
             <kie:width>118</kie:width>
