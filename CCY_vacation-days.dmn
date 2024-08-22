@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_9093D0F7-34CC-4705-87CD-2334BA61D3F3" id="_31392220-1179-45C1-9D02-C90938EE388F" name="DMN_B6E20D76-6F5C-4E7E-8E3C-D8EB24BDB240" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+  <decision name="Base Vacation Days" id="_3B609864-B351-4D6D-B402-B29F870E3E38">
+    <variable name="Base Vacation Days" id="_073241B4-DCFB-4FF9-AB1A-ABEFB68E7118" typeRef="number" />
+    <literalExpression id="_A7EA115A-39E2-48B7-92E8-658CC73A6961" typeRef="number" label="Base Vacation Days">
+      <text>22</text>
+    </literalExpression>
+  </decision>
+  <inputData name="Age" id="_8BF55763-C955-4935-B532-2F08499E63B1">
+    <variable name="Age" id="_DCB9A80B-29FD-43DF-998C-AB2AA346F6B2" typeRef="number" />
+  </inputData>
+  <inputData name="Years of Service" id="_38690C59-0B9F-4FBF-957C-7EB0B55EF30E">
+    <variable name="Years of Service" id="_608D1E74-DF8A-4F56-8680-004031ADD561" typeRef="number" />
+  </inputData>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_FA727590-8006-4994-8302-2893EBAD4655" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_A7EA115A-39E2-48B7-92E8-658CC73A6961">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_DE760E63-F47E-4F3D-AE6C-968362908328" dmnElementRef="_3B609864-B351-4D6D-B402-B29F870E3E38" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="280" y="100" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_20CD6F87-D0CA-4D5F-9062-EBFD617F7151" dmnElementRef="_8BF55763-C955-4935-B532-2F08499E63B1" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="440" y="320" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_97B21F80-6CBC-4CFC-A147-687A6F1CBB0A" dmnElementRef="_38690C59-0B9F-4FBF-957C-7EB0B55EF30E" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="800" y="320" width="160" height="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
