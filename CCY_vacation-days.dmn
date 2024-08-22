@@ -130,6 +130,52 @@
     <informationRequirement id="_9F2BFEDC-C8C4-4399-B36D-E4492A925B51">
       <requiredInput href="#_38690C59-0B9F-4FBF-957C-7EB0B55EF30E" />
     </informationRequirement>
+    <decisionTable id="_A0F9FB70-7E34-4976-8B01-9FEF4D9AE6B2" typeRef="number" hitPolicy="COLLECT" label="Extra days case-3" aggregation="MAX">
+      <input id="_880C2983-67F2-4ECE-8600-B951B044CB9B">
+        <inputExpression id="_C14C73CB-9A0E-45E3-B684-5B4688D151FD" typeRef="number">
+          <text>Age</text>
+        </inputExpression>
+      </input>
+      <input id="_67C2C1DC-3459-4089-AE29-F4EC01159CB5">
+        <inputExpression id="_E550D8FA-67FF-4C09-9F39-0D79BC6AA0A8" typeRef="number">
+          <text>Years of Service</text>
+        </inputExpression>
+      </input>
+      <output id="_339326F3-3828-49E6-A7E4-63D9F431C54D" name="Output-1">
+        <defaultOutputEntry id="_8E2448E7-8331-428B-B235-8D0AAE85EC14">
+          <text>0</text>
+        </defaultOutputEntry>
+      </output>
+      <annotation name="Annotations" />
+      <rule id="_1D46F6E3-941C-46D7-BB9E-95DF4102C944">
+        <inputEntry id="_F8E44376-3389-4206-8D98-74D59F7225C6">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="_0CF539FD-0053-4849-AB99-B00E6EF4B6C3">
+          <text>[15..30]</text>
+        </inputEntry>
+        <outputEntry id="_AB879444-F04C-48D9-BC0B-6BAE3FC2B534">
+          <text>3</text>
+        </outputEntry>
+        <annotationEntry>
+          <text>// Your annotations here</text>
+        </annotationEntry>
+      </rule>
+      <rule id="_CA389E43-2642-4F35-BE4F-C45CB0AFE9F6">
+        <inputEntry id="_4A9DF820-8938-420F-9382-6C891D24A559">
+          <text>&gt;=45</text>
+        </inputEntry>
+        <inputEntry id="_7AA9D50C-C8A4-4D95-B83F-00B5091B0A88">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="_7B34461D-5705-46C3-9E43-6D08A9BEEB7E">
+          <text>2</text>
+        </outputEntry>
+        <annotationEntry>
+          <text></text>
+        </annotationEntry>
+      </rule>
+    </decisionTable>
   </decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_FA727590-8006-4994-8302-2893EBAD4655" name="Default DRD" useAlternativeInputDataShape="false">
@@ -146,6 +192,13 @@
             <kie:width>240</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F616C2EC-EC74-4B09-8757-4AD4FF9FF44F">
+            <kie:width>60</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>240</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_A0F9FB70-7E34-4976-8B01-9FEF4D9AE6B2">
             <kie:width>60</kie:width>
             <kie:width>118</kie:width>
             <kie:width>118</kie:width>
