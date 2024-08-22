@@ -177,6 +177,27 @@
       </rule>
     </decisionTable>
   </decision>
+  <decision name="Total Vacation Days" id="_2BF7BB5D-D642-4BAF-8554-15210CE745CB">
+    <variable name="Total Vacation Days" id="_2DCA2C38-B283-40AA-9509-D4BB0102D810" typeRef="number" />
+    <informationRequirement id="_469DDC2F-CA24-46FC-B122-06A8DFB68BEC">
+      <requiredDecision href="#_3B609864-B351-4D6D-B402-B29F870E3E38" />
+    </informationRequirement>
+    <informationRequirement id="_5BCDEAA6-178D-49C6-80CB-F327F991D3C6">
+      <requiredDecision href="#_57A721FD-062A-48A3-9617-15D6A5BA703D" />
+    </informationRequirement>
+    <informationRequirement id="_7B19DCFC-8E38-485D-8997-ED2AC24D1396">
+      <requiredDecision href="#_DC3852BF-DCE1-4130-A6D1-6AE5007EA674" />
+    </informationRequirement>
+    <informationRequirement id="_556A5AE3-7257-4FE2-B8F3-4B4B91BFA170">
+      <requiredDecision href="#_E9FDBBB9-EC98-4F6A-8FA0-8569CE95449A" />
+    </informationRequirement>
+    <literalExpression id="_5590474E-83BF-4C2F-AC0F-9D2A07285E20" typeRef="number" label="Total Vacation Days">
+      <text>Base Vacation Days +
+max( Extra days case-1, Extra days case-3) +
+Extra days case-2
+</text>
+    </literalExpression>
+  </decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_FA727590-8006-4994-8302-2893EBAD4655" name="Default DRD" useAlternativeInputDataShape="false">
       <di:extension>
@@ -204,6 +225,9 @@
             <kie:width>118</kie:width>
             <kie:width>118</kie:width>
             <kie:width>240</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_5590474E-83BF-4C2F-AC0F-9D2A07285E20">
+            <kie:width>553</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -248,6 +272,25 @@
       <dmndi:DMNEdge id="_BBEFD5F9-26A9-4AE2-9D15-4E062DCC961B" dmnElementRef="_9F2BFEDC-C8C4-4399-B36D-E4492A925B51" sourceElement="_97B21F80-6CBC-4CFC-A147-687A6F1CBB0A" targetElement="_1D2C1B39-3A87-43C9-9A45-5501C5DB3080">
         <di:waypoint x="880" y="360" />
         <di:waypoint x="1100" y="220" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="_D1571168-541E-4142-9BCC-FC2CBB6CA471" dmnElementRef="_2BF7BB5D-D642-4BAF-8554-15210CE745CB" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="720" y="-80" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_0F725374-86EE-4E56-BC61-84DE46E39BDB" dmnElementRef="_469DDC2F-CA24-46FC-B122-06A8DFB68BEC" sourceElement="_DE760E63-F47E-4F3D-AE6C-968362908328" targetElement="_D1571168-541E-4142-9BCC-FC2CBB6CA471">
+        <di:waypoint x="260" y="180" />
+        <di:waypoint x="720" y="-40" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="_D720C04D-6C3D-44EE-BACC-774590D2ECB4" dmnElementRef="_5BCDEAA6-178D-49C6-80CB-F327F991D3C6" sourceElement="_7DA97D4E-5324-4670-828B-264E4B7BBAD0" targetElement="_D1571168-541E-4142-9BCC-FC2CBB6CA471">
+        <di:waypoint x="540" y="180" />
+        <di:waypoint x="800" y="0" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="_64AB0D80-80F7-4AEE-984F-52D0101493F1" dmnElementRef="_7B19DCFC-8E38-485D-8997-ED2AC24D1396" sourceElement="_47840A0B-BE8E-4637-9D0D-1DFBD8F30DD7" targetElement="_D1571168-541E-4142-9BCC-FC2CBB6CA471">
+        <di:waypoint x="800" y="180" />
+        <di:waypoint x="800" y="0" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="_F8E45DE7-025A-48EC-AE9D-CF9AF3C3E601" dmnElementRef="_556A5AE3-7257-4FE2-B8F3-4B4B91BFA170" sourceElement="_1D2C1B39-3A87-43C9-9A45-5501C5DB3080" targetElement="_D1571168-541E-4142-9BCC-FC2CBB6CA471">
+        <di:waypoint x="1100" y="180" />
+        <di:waypoint x="800" y="0" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
